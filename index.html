@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+
+
+    <!-- <h2>Ví dụ viết chương trình tính điểm trung bình 2 khối thi đại học A,C</h2> -->
+    <!-- <div class="row mt-4 justify-content-center border-2 ">
+      <div class="col-4">
+        <span class="alert alert-danger">Khối A</span>
+        <div class="input-group mt-5">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-danger">Điểm Toán</button>
+          </div>
+          <input type="text" class="form-control" id="diemToan" placeholder="Nhập vào điểm toán">
+        </div>
+        <div class="input-group mt-5">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-danger">Điểm Lí</button>
+          </div>
+          <input type="text" class="form-control" id="diemLi" placeholder="Nhập vào điểm toán">
+        </div>
+        <div class="input-group mt-5">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-danger">Điểm Hóa</button>
+          </div>
+          <input type="text" class="form-control" id="diemHoa" placeholder="Nhập vào điểm toán">
+        </div>
+        <div class="input-group mt-5">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-danger">Điểm Trung Bình</button>
+          </div>
+          <input type="text" class="form-control" id="diemTrungBinhkhoiA" placeholder="Nhập vào điểm toán">
+        </div>
+      </div>
+      <div class="offset-2 col-4">
+        <span class="alert alert-success">Khối C</span>
+        <div class="input-group mt-5">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-success">Điểm Văn</button>
+          </div>
+          <input type="text" class="form-control" id="diemVan" placeholder="Nhập vào điểm toán">
+        </div>
+        <div class="input-group mt-5">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-success">Điểm Sử</button>
+          </div>
+          <input type="text" class="form-control" id="diemSu" placeholder="Nhập vào điểm toán">
+        </div>
+        <div class="input-group mt-5">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-success">Điểm Địa</button>
+          </div>
+          <input type="text" class="form-control" id="diemDia" placeholder="Nhập vào điểm toán">
+        </div>
+        <div class="input-group mt-5">
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-success">Điểm Trung Bình</button>
+          </div>
+          <input type="text" class="form-control" id="diemTrungBinhKhoiC" placeholder="Nhập vào điểm toán">
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-primary" id="tinhDiem">Tính Điểm</button>
+      </div>
+    </div> -->
+
+    <!-- <div class="row  justify-content-center">
+      <div class="col-4">
+        <div class="input-group ">
+          <button class="btn btn-danger">khối A</button>
+        </div>
+        <div class="input-group mt-3">
+          <button class="btn btn-outline-success">Điểm Toán</button>
+          <input type="text" class="form-control" id="diemToan" placeholder="nhập điểm toán">
+        </div>
+        <div class="input-group mt-3">
+          <button class="btn btn-outline-success">Điểm Lí</button>
+          <input type="text" class="form-control" id="diemLi" placeholder="nhập điểm Lí">
+        </div>
+        <div class="input-group mt-3">
+          <button class="btn btn-outline-success">Điểm Hóa</button>
+          <input type="text" class="form-control" id="diemHoa" placeholder="nhập điểm Hóa">
+        </div>
+        <div class="input-group mt-3">
+          <button class="btn btn-outline-success">Điểm Trung bình</button>
+          <input type="text" class="form-control" id="diemTrungBinhkhoiA">
+        </div>
+      </div>
+
+      <div class="offset-2 col-4">
+        <div class="input-group ">
+          <button class="btn btn-success">khối C</button>
+        </div>
+        <div class="input-group mt-3">
+          <button class="btn btn-outline-success">Điểm Văn</button>
+          <input type="text" class="form-control" id="diemVan" placeholder="nhập điểm toán">
+        </div>
+        <div class="input-group mt-3">
+          <button class="btn btn-outline-success">Điểm Sử</button>
+          <input type="text" class="form-control" id="diemSu" placeholder="nhập điểm Lí">
+        </div>
+        <div class="input-group mt-3">
+          <button class="btn btn-outline-success">Điểm Địa</button>
+          <input type="text" class="form-control" id="diemDia" placeholder="nhập điểm Hóa">
+        </div>
+        <div class="input-group mt-3">
+          <button class="btn btn-outline-success">Điểm Trung bình</button>
+          <input type="text" class="form-control" id="diemTrungBinhkhoiC">
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-primary" id="diemTrungBinh">Tính điểm </button>
+      </div>
+    </div> -->
+
+
+    <hr>
+
+
+    <!-- Quản lý sinh viên   -->
+    <div class="container">
+      <h2 class="text-center">Quản lý tuyển sinh</h2>
+      <div class="input-group justify-content-center ">
+        <div class="input-group mt-3 w-75">
+          <button class="btn btn-dark text-light">Điểm chuẩn hội đồng</button>
+          <input type="text" id="diemChuanHoiDong" class="form-control" placeholder="nhập điểm chuẩn hội đồng">
+        </div>
+        <div class="input-group mt-3 w-75">
+          <button class="btn btn-danger">Điểm môn thứ 1</button>
+          <input type="text" id="diemMonThuNhat" class="form-control" placeholder="nhập điểm môn thứ nhất">
+        </div>
+        <div class="input-group mt-3 w-75">
+          <button class="btn btn-danger">Điểm môn thứ 2</button>
+          <input type="text" id="diemMonThuHai" class="form-control" placeholder="nhập điểm môn thứ nhất">
+        </div>
+        <div class="input-group mt-3 w-75">
+          <button class="btn btn-danger">Điểm môn thứ 3</button>
+          <input type="text" id="diemMonThuBa" class="form-control" placeholder="nhập điểm môn thứ nhất">
+        </div>
+        <div class="input-group mt-3 w-75">
+          <button class="btn btn-primary">Điểm cộng khu vực</button>
+          <div class="text-center">
+            <!-- <label for="" class="form-label">Điểm cộng khu vực</label> -->
+            <select class="form-select" name="" id="diemKhuVuc">
+              <option value="0">X</option>
+              <option value="2">A</option>
+              <option value="1">B</option>
+              <option value="0.5">C</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-group mt-3 w-75">
+          <button class="btn btn-primary">Điểm cộng đối tượng</button>
+          <div class="text-center">
+            <!-- <label for="" class="form-control">Điểm cộng đối tượng</label> -->
+            <select class="form-select" name="" id="diemDoiTuong">
+              <option value="0">0</option>
+              <option value="2.5">1</option>
+              <option value="1.5">2</option>
+              <option value="1">3</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-group mt-3 w-75">
+          <button class="btn btn-outline-success">Điểm Trung bình</button>
+          <input type="text" class="form-control" id="diemTrungBinhBaMon">
+        </div>
+        <div class="input-group mt-3 w-75">
+          <button class="btn btn-success" id="tongDiemTB">Tổng điểm</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- bài tập 2 tính tiền điện  -->
+    <div class="container">
+      <h2 class="text-center">Tính tiền điện</h2>
+      <div class="row justify-content-center">
+        <div class="input-group w-75 text-center m-3">
+          <button class="btn btn-outline-success">Tên Người sử dụng</button>
+          <input type="text" class="form-control" id="nguoiSuDung">
+        </div>
+        <div class="input-group w-75 text-center m-3">
+          <button class="btn btn-outline-success">Nhập số điện</button>
+          <input type="text" class="form-control" id="nhapSoDien">
+        </div>
+        <div class="input-group w-75 text-center m-3">
+          <button class="btn btn-danger">Tổng Tiền Điện</button>
+          <input type="text" class="form-control" id="tongTienDien">
+        </div>
+        <div class="input-group mt-3 w-75">
+          <button class="btn btn-success" id="ketQuaTienDien">Kết quả</button>
+        </div>
+      </div>
+    </div>
+<hr>
+    <!-- bài tập 3 tính tiền thu nhập cá nhân  -->
+    <div class="container">
+      <h2 class="text-center">Tính tiền thu nhập cá nhân </h2>
+      <div class="row justify-content-center">
+        <div class="input-group w-75 mt-3">
+          <button class="btn btn-outline-dark">Tên người đóng thuế</button>
+          <input type="text" class="form-control" id="nguoiDongThue">
+        </div>
+        <div class="input-group w-75 mt-3">
+          <button class="btn btn-outline-danger">Tổng thu nhập 1 năm</button>
+          <input type="text" class="form-control" id="tongThuNhapMotNam">
+        </div>
+        <div class="input-group w-75 mt-3">
+          <button class="btn btn-outline-primary">Số Người Phụ Thuộc</button>
+          <input type="text" class="form-control" id="nguoiPhuThuoc">
+        </div>
+        <div class="input-group w-75 mt-3">
+          <button class="btn btn-outline-success">số Tiền Thuế cá nhân phải chịu</button>
+          <input type="text" class="form-control" id="tienThueMotNam">
+        </div>
+        <div class="input-group w-75 mt-3">
+          <button class="btn btn-success " onclick="tongThueCaNhan()" >Tính Thuế cá nhân </button>
+        </div>
+    
+      </div>
+    </div>
+
+    <!-- bài tập 4 tình tiền cáp  -->
+
+
+
+
+
+
+
+
+    
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
