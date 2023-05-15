@@ -210,7 +210,7 @@
         </div>
       </div>
     </div>
-<hr>
+    <hr>
     <!-- bài tập 3 tính tiền thu nhập cá nhân  -->
     <div class="container">
       <h2 class="text-center">Tính tiền thu nhập cá nhân </h2>
@@ -232,13 +232,41 @@
           <input type="text" class="form-control" id="tienThueMotNam">
         </div>
         <div class="input-group w-75 mt-3">
-          <button class="btn btn-success " onclick="tongThueCaNhan()" >Tính Thuế cá nhân </button>
+          <button class="btn btn-success " onclick="tongThueCaNhan()">Tính Thuế cá nhân </button>
         </div>
-    
+
       </div>
     </div>
-
+    <hr>
     <!-- bài tập 4 tình tiền cáp  -->
+    <div class="container">
+      <h3 class="text-center">Tính tiền cáp </h3>
+      <div class="input-group mt-3 w-100">
+        <div class="text-center">
+          <!-- <label for="" class="form-control">Điểm cộng đối tượng</label> -->
+          <select class="form-select" name="" id="loaiKhachHang" onchange="changCustumer()">
+            <option value="nhaDan">Nhà Dân</option>
+            <option value="doanhNghiep">Doanh Nghiệp</option>
+          </select>
+        </div>
+      </div>
+      <div class=" my-3">
+        <label for="" class="mb=3" style="color: blue;">Nhập mã khách hàng:</label>
+        <input type="text" id="maKhachHang" class="form-control" placeholder="mã khách hàng">
+      </div>
+      <div class=" my-3">
+        <label for="" class="mb=3" style="color: brown;">Số kênh cao cấp:</label>
+        <input type="text" id="soKenhCaoCap" class="form-control" placeholder="số kênh cao cấp">
+      </div>
+      <div class=" my-3">
+        <label for="" class="mb=3" style="color: seagreen;">số kết nối doanh nghiệp:</label>
+        <input type="text" id="ketNoiDoanhNghiep" class="form-control" 
+          style="display: none;">
+      </div>
+      <div class="w-100">
+        <button class="btn btn-success my-3" id="tinhTien">Tính tiền Cáp</button>
+        <div class="bg bg-danger bg-opacity-75 p-3 text-white mt-3" id="hienThiTienCap">Hiển Thị Tiền Cáp</div>
+      </div>
 
 
 
@@ -247,7 +275,6 @@
 
 
 
-    
   </main>
   <footer>
     <!-- place footer here -->
