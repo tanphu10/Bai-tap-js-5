@@ -241,7 +241,7 @@ document.getElementById("tinhTien").onclick = function () {
   feeLuxury = 0;
   var numberCustumer = document.getElementById("maKhachHang").value;
   var typeCustumer = document.getElementById("loaiKhachHang").value;
-  var numberConnect = document.getElementById("ketNoiDoanhNghiep") * 1;
+  var numberConnect = document.getElementById("ketNoiDoanhNghiep").value * 1;
   var numberLuxury = document.getElementById("soKenhCaoCap").value * 1;
   if (typeCustumer == "nhaDan") {
     feeInvoice = 4.5;
@@ -251,7 +251,7 @@ document.getElementById("tinhTien").onclick = function () {
     feeInvoice = 15;
     if (numberConnect <= 10) {
       feeService = 75;
-    } else if (numberConnect > 10) {
+    } else  {
       feeService = 75 + (numberConnect - 10) * 5;
     }
     feeLuxury = 50;
